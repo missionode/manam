@@ -1,0 +1,131 @@
+/* Base styles for the app container */
+
+.sansation-light {
+    font-family: "Sansation", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .sansation-regular {
+    font-family: "Sansation", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .sansation-bold {
+    font-family: "Sansation", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .sansation-light-italic {
+    font-family: "Sansation", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .sansation-regular-italic {
+    font-family: "Sansation", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .sansation-bold-italic {
+    font-family: "Sansation", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+
+body   {
+    margin: 0;
+    font-family: "Sansation", sans-serif;
+}
+#app-container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; /* Hide anything overflowing from zoom */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* Black background for smooth fades */
+}
+
+/* Slideshow Image Styling */
+.slideshow-image {
+    position: absolute; /* Layer images */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the container */
+    opacity: 0; /* Hidden by default */
+    transform: scale(1); /* Initial zoom state */
+    transition: opacity var(--image-transition-duration) ease-in-out,
+    transform var(--image-display-duration) linear; /* Zoom over display time */
+    will-change: opacity, transform; /* Optimize for animation */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.slideshow-image.active {
+    opacity: 1; /* Visible image */
+    transform: scale(var(--zoom-amount)); /* Zoomed in end state */
+}
+
+/* Ensure the image that is fading out also continues its zoom */
+.slideshow-image.fading-out {
+    opacity: 0;
+    transition: opacity var(--image-transition-duration) ease-in-out; /* Only opacity transition */
+    /* The transform here will be the state it was in when fading out began */
+}
+
+/* Ken Burns Effect (Slow Zooming In) */
+/* This will be handled by the transform on the .active class
+   where --zoom-amount is slightly greater than 1 (e.g., 1.1 or 1.2).
+   The 'linear' easing makes the zoom consistent. */
+
+
+
+
+   #dialogue-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none; /* Allows clicks/taps to pass through to elements beneath */
+}
+
+#manifestation-text {
+    color: #0aa10a; /* Or any desired color */
+    font-family: "Sansation", sans-serif;
+    font-size: clamp(2em, 8vw, 4em); /* Responsive font size */
+    font-weight: 300;
+    text-align: center;
+    padding: 1em;
+    opacity: 0; /* Hidden by default */
+    transition: opacity var(--dialogue-fade-duration) ease-in-out; /* Smooth fade */
+    will-change: opacity;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7); /* For readability */
+    padding: 20px;
+    background: #ffffff96;
+    border-radius: 10px;
+}
+
+/* Animation for dialogue text */
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; } /* Fade in */
+    90% { opacity: 1; } /* Stay visible */
+    100% { opacity: 0; } /* Fade out */
+}
+
+/* This animation will be applied dynamically via JavaScript */
+.dialogue-active {
+    animation: fadeInOut var(--dialogue-total-duration) forwards;
+}
