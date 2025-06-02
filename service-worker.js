@@ -15,6 +15,8 @@ const urlsToCache = [
   './mantras/ChatGPT Image Jun 2, 2025, 09_28_05 PM.png',
   './mantras/ChatGPT Image Jun 2, 2025, 09_33_38 PM.png',
   './mantras/ChatGPT Image Jun 2, 2025, 09_38_42 PM.png',
+  './mantras/Gemini_Generated_Image_emvb4uemvb4uemvb.png',
+  '/mantras/Gemini_Generated_Image_v91iyxv91iyxv91i.png',
   // ... and so on for all images
   './icons/icon-192x192.png',
 ];
