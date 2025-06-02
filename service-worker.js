@@ -1,6 +1,5 @@
 const CACHE_NAME = 'fragrance-manifest-cache-v1';
 const urlsToCache = [
-  './',
   './index.html',
   './style.css',
   './script.js',

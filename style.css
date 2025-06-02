@@ -99,6 +99,7 @@ body   {
     justify-content: center;
     align-items: center;
     pointer-events: none; /* Allows clicks/taps to pass through to elements beneath */
+    visibility: hidden;
 }
 
 #manifestation-text {
