@@ -6,11 +6,17 @@ const urlsToCache = [
   './manifest.json',
   // Include all your images from the mantras folder here for offline access
   // This list should be dynamically generated at build time for large number of images
-  './mantras/image1.jpg',
-  './mantras/image2.png',
+  './mantras/image1.png',
+  './mantras/ChatGPT Image Jun 2, 2025, 08_54_06 PM.png',
+  './mantras/ChatGPT Image Jun 2, 2025, 08_54_11 PM.png',
+  './mantras/ChatGPT Image Jun 2, 2025, 08_54_15 PM.png',
+  './mantras/ChatGPT Image Jun 2, 2025, 09_00_32 PM.png',
+  './mantras/ChatGPT Image Jun 2, 2025, 09_24_31 PM.png',
+  './mantras/ChatGPT Image Jun 2, 2025, 09_28_05 PM.png',
+  './mantras/ChatGPT Image Jun 2, 2025, 09_33_38 PM.png',
+  './mantras/ChatGPT Image Jun 2, 2025, 09_38_42 PM.png',
   // ... and so on for all images
   './icons/icon-192x192.png',
-  './icons/icon-512x512.png'
 ];
 
 self.addEventListener('install', event => {

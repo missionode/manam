@@ -2,7 +2,7 @@
 const slideshowImagesFolder = './mantras/'; // Path to your images folder
 const imageDisplayDurationMs = 8000;     // How long each image stays on screen (in ms)
 const imageTransitionDurationMs = 200;  // How long the fade/zoom transition takes (in ms)
-const zoomAmount = 1.1;                  // 1.0 = no zoom, 1.1 = 10% zoom, etc.
+const zoomAmount = 1.3;                  // 1.0 = no zoom, 1.1 = 10% zoom, etc.
 const dialogueFadeDurationMs = 1000;     // How long dialogue fades in/out (in ms)
 const dialogueDisplayDurationMs = 4000;  // How long dialogue is fully visible (in ms)
 const dialogueDelayBetweenMs = 1000;     // Delay before next dialogue appears (in ms)
