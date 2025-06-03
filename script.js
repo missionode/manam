@@ -39,7 +39,7 @@ const imageFilenames = [
     'ChatGPT Image Jun 2, 2025, 09_38_42 PM.png',
     'Gemini_Generated_Image_emvb4uemvb4uemvbGemini_Generated_Image_emvb4uemvb4uemvb.png',
     'Gemini_Generated_Image_v91iyxv91iyxv91i.png',
-    'file_00000000f03461f7a08f4aa3b5150279.pbg'
+    'file_00000000f03461f7a08f4aa3b5150279.png'
     // ... add all your image filenames here
 ];
 
