@@ -2,7 +2,7 @@
 const slideshowImagesFolder = './mantras/'; // Path to your images folder
 const imageDisplayDurationMs = 8000;     // How long each image stays on screen (in ms)
 const imageTransitionDurationMs = 200;  // How long the fade/zoom transition takes (in ms)
-const zoomAmount = .5;                  // 1.0 = no zoom, 1.1 = 10% zoom, etc.
+const zoomAmount = .2;                  // 1.0 = no zoom, 1.1 = 10% zoom, etc.
 const dialogueFadeDurationMs = 1000;     // How long dialogue fades in/out (in ms)
 const dialogueDisplayDurationMs = 4000;  // How long dialogue is fully visible (in ms)
 const dialogueDelayBetweenMs = 1000;     // Delay before next dialogue appears (in ms)
@@ -35,6 +35,7 @@ const imageFilenames = [
     'ChatGPT Image Jun 2, 2025, 08_54_15 PM.png',
     'file_00000000a6d861f8af8525371690bd94.png',
     'file_0000000090e861f8afb9c6059d8db970.png',
+    'file_00000000a85c6230a40bcebeacc7925b.png,
     'ChatGPT Image Jun 2, 2025, 09_00_32 PM.png',
     'file_00000000d99061f9bdb5878cebde2ec2.png',
     'ChatGPT Image Jun 2, 2025, 09_24_31 PM.png',
