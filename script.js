@@ -31,6 +31,7 @@ const imageFilenames = [
     'mantra1.png',
     'ChatGPT Image Jun 2, 2025, 08_54_06 PM.png',
     'ChatGPT Image Jun 2, 2025, 08_54_11 PM.png',
+    'file_000000009850623082bea4ca1c9f00f5.png',
     'ChatGPT Image Jun 2, 2025, 08_54_15 PM.png',
     'file_00000000a6d861f8af8525371690bd94.png',
     'ChatGPT Image Jun 2, 2025, 09_00_32 PM.png',
