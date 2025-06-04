@@ -30,6 +30,7 @@ document.documentElement.style.setProperty('--dialogue-total-duration', `${dialo
 const imageFilenames = [
     'mantra1.png',
     'ChatGPT Image Jun 2, 2025, 08_54_06 PM.png',
+    'file_00000000bcc861fdb018cbdddf3f3960.png',
     'ChatGPT Image Jun 2, 2025, 08_54_11 PM.png',
     'file_000000009850623082bea4ca1c9f00f5.png',
     'ChatGPT Image Jun 2, 2025, 08_54_15 PM.png',
